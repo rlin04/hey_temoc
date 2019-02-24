@@ -3,7 +3,7 @@ import CrawlRoot
 from pathlib import Path
 
 # create csv
-my_file = Path("/csvfile.csv")
+my_file = Path("/csv_file.csv")
 if not my_file.exist():
     CrawlRoot().url_to_csv()
 #------------------------------Part1--------------------------------
@@ -12,7 +12,7 @@ if not my_file.exist():
 intent_dict = {}
 
 intent_lst = []
-with open('csvfile.csv') as csv_file:
+with open('csv_file.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     for row in csv_reader:
         intent_lst.append(row[0])
