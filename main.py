@@ -5,6 +5,7 @@ from difflib import get_close_matches
 def getMatch(patterns, word):
     print(get_close_matches (word, patterns))
 
+
 def main():
     #my_file = Path("/csvfile.csv")
     #if not my_file.exist():
