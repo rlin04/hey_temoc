@@ -1,0 +1,1352 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "dallas bot",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "UTDBookStore",
+                    "slots": [
+                        {
+                            "name": "UTDBookStoreItem",
+                            "type": "bookstore_property"
+                        }
+                    ],
+                    "samples": [
+                        "how about {UTDBookStoreItem}",
+                        "what is book store",
+                        "tell me the {UTDBookStoreItem} of the book store",
+                        "what is the book store {UTDBookStoreItem}",
+                        "book store {UTDBookStoreItem}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "UTDTechStore",
+                    "slots": [
+                        {
+                            "name": "UTDTechStoreItem",
+                            "type": "techstore_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about the tech store {UTDTechStoreItem}",
+                        "tech store {UTDTechStoreItem}",
+                        "what is the tech store {UTDTechStoreItem}"
+                    ]
+                },
+                {
+                    "name": "app",
+                    "slots": [
+                        {
+                            "name": "appItem",
+                            "type": "app_property"
+                        }
+                    ],
+                    "samples": [
+                        "can you tell me the {appItem} of my application"
+                    ]
+                },
+                {
+                    "name": "budget",
+                    "slots": [
+                        {
+                            "name": "budgetItem",
+                            "type": "budget_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {budgetItem} about budget"
+                    ]
+                },
+                {
+                    "name": "business_continuity",
+                    "slots": [
+                        {
+                            "name": "business_continuityItem",
+                            "type": "business_continuity_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me business continuity {business_continuityItem}",
+                        "tell me {business_continuityItem} about buisiness continuity"
+                    ]
+                },
+                {
+                    "name": "camp_clinics",
+                    "slots": [
+                        {
+                            "name": "camp_clinicsItem",
+                            "type": "camp_clinics_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {camp_clinicsItem} about camps clinics"
+                    ]
+                },
+                {
+                    "name": "cash",
+                    "slots": [
+                        {
+                            "name": "cashItem",
+                            "type": "cash_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about {cashItem} cash"
+                    ]
+                },
+                {
+                    "name": "cellphone",
+                    "slots": [
+                        {
+                            "name": "cellphoneItem",
+                            "type": "cellphone_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {cellphoneItem} about cellphone"
+                    ]
+                },
+                {
+                    "name": "cost_center",
+                    "slots": [
+                        {
+                            "name": "cost_centerItem",
+                            "type": "cost_center_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {cost_centerItem} about cost center"
+                    ]
+                },
+                {
+                    "name": "creditcard",
+                    "slots": [
+                        {
+                            "name": "creditcardItem",
+                            "type": "creditcard_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {creditcardItem} about credit card"
+                    ]
+                },
+                {
+                    "name": "department",
+                    "slots": [
+                        {
+                            "name": "departmentItem",
+                            "type": "department_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {departmentItem} about department"
+                    ]
+                },
+                {
+                    "name": "employee",
+                    "slots": [
+                        {
+                            "name": "employeeItem",
+                            "type": "employee_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {employeeItem} about employee"
+                    ]
+                },
+                {
+                    "name": "eProcurement",
+                    "slots": [
+                        {
+                            "name": "eProcurementItem",
+                            "type": "eProcurement_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {eProcurementItem} about e.Procument"
+                    ]
+                },
+                {
+                    "name": "finance",
+                    "slots": [
+                        {
+                            "name": "financeItem",
+                            "type": "finance_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {financeItem} about finance"
+                    ]
+                },
+                {
+                    "name": "HUB",
+                    "slots": [
+                        {
+                            "name": "HUBItem",
+                            "type": "HUB_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about {HUBItem} historically underutilized business",
+                        "tell me about {HUBItem} H.U.B."
+                    ]
+                },
+                {
+                    "name": "incident",
+                    "slots": [
+                        {
+                            "name": "incidentItem",
+                            "type": "incident_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {incidentItem} about incident"
+                    ]
+                },
+                {
+                    "name": "meal",
+                    "slots": [
+                        {
+                            "name": "mealItem",
+                            "type": "meal_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {mealItem} about meal"
+                    ]
+                },
+                {
+                    "name": "mentor",
+                    "slots": [
+                        {
+                            "name": "mentorItem",
+                            "type": "mentor_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about {mentorItem} about mentor"
+                    ]
+                },
+                {
+                    "name": "OneCard",
+                    "slots": [
+                        {
+                            "name": "OneCardItem",
+                            "type": "OneCard_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {OneCardItem} about OneCard"
+                    ]
+                },
+                {
+                    "name": "payroll",
+                    "slots": [
+                        {
+                            "name": "payrollItem",
+                            "type": "payroll_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {payrollItem} about payroll"
+                    ]
+                },
+                {
+                    "name": "PeopleSoft",
+                    "slots": [
+                        {
+                            "name": "PeopleSoftItem",
+                            "type": "PeopleSoft_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {PeopleSoftItem}  about PeopleSoft"
+                    ]
+                },
+                {
+                    "name": "plan",
+                    "slots": [
+                        {
+                            "name": "planItem",
+                            "type": "plan_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {planItem} about plan"
+                    ]
+                },
+                {
+                    "name": "subsidy",
+                    "slots": [
+                        {
+                            "name": "subsidyItem",
+                            "type": "subsidy_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {subsidyItem} about subsidy"
+                    ]
+                },
+                {
+                    "name": "theft",
+                    "slots": [
+                        {
+                            "name": "theftItem",
+                            "type": "theft_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {theftItem} about theft"
+                    ]
+                },
+                {
+                    "name": "taxform",
+                    "slots": [
+                        {
+                            "name": "taxformItem",
+                            "type": "taxform_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {taxformItem} about tax form",
+                        "tell me {taxformItem} about one zero nine eight T"
+                    ]
+                },
+                {
+                    "name": "information",
+                    "slots": [
+                        {
+                            "name": "informationItem",
+                            "type": "information_property"
+                        }
+                    ],
+                    "samples": [
+                        "tell me {informationItem} of information"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "bookstore_property",
+                    "values": [
+                        {
+                            "id": "return",
+                            "name": {
+                                "value": "return policy",
+                                "synonyms": [
+                                    "return to book store",
+                                    "return"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "complain",
+                            "name": {
+                                "value": "customer service",
+                                "synonyms": [
+                                    "complaint about book store",
+                                    "book store complaint"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "time",
+                            "name": {
+                                "value": "hours",
+                                "synonyms": [
+                                    "time",
+                                    "hour"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "techstore_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hours",
+                                "synonyms": [
+                                    "hour",
+                                    "time"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "discount",
+                                "synonyms": [
+                                    "cheap",
+                                    "education discount"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "app_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "others"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "online"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "promotion"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "resume"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "how"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reason change"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "where"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "status"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "print"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "immediate response"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "change after"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "make changes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "how long"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "who will see",
+                                "synonyms": [
+                                    "who sees"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "process"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "accomodation"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "budget_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "parent"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "journal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "approver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "exception"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reconciliation"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "checking errors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "resolve error"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "check error"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "budget check"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "training"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "office"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "issues"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "account"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "procurement"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shopper"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "business_continuity_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "why"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "coordinator"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "planning"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "camp_clinics_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "certificate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "claim"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "overnight stay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "insurance"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cash_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "overage shortage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reimburse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "petty"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "handler"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "personal check"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cellphone_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "battery"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "problem"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "email"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "contract"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "transfer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "subsidized"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carrier"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "subsidy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "cost_center_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "restrictions"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "transfer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deficit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fund code"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "end date"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "funds"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "purchase order"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "creditcard_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "ezpay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bursar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "visa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "policy"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "department_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "manager"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "budget error"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rejected requisition"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "transfer status"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "journal error"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "interdepartmental"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vendor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "change requisition"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "refund"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "requisition pending"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "department search"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "requestor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "assistant"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "employee_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "look up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "death"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "overpaid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "eProcurement_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Approver"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Requestor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "status"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "return"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "complete"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "catalog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vendors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reject"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "correct"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "supplier"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "finance_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "payment"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "approve"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "communicate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hours"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "location"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "credit card"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "HUB_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "certified"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "subcontracting plan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "listing"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "service"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vendor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "promote"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "purpose"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "subcontracting contact"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eligible"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "goals"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "what"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "incident_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "process"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "how to report"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "response"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "security incident"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "adverse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "university data"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "report"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "terms"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "who"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "plan"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "meal_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "balance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "carry over"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "when"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "purchase plan"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "mentor_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "criteria"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "success"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "after found"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "assistance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "program"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "OneCard_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "approve"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "schedule"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "reconcile"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "payroll_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "roll up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "change"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "parent"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "query"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deadline"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PeopleSoft_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "account"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "enroll"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "access"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "plan_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Plant and Property Accounting"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "in house"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "unknown circunstances"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "unit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "group"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "subsidy_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "end"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tax"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "size"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "apply"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "eligible"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "monthly cost"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "begin"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "theft_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "identity"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "protect"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "suspect"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "taxform_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "receive"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mail"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "obtain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tax credit"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "information_property",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "use policy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "find out"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "copies"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "security event"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
