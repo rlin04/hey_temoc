@@ -18,13 +18,6 @@ with open('csvfile.csv') as csv_file:
         intent_lst.append(row[0])
         intent_dict[row[0], {row[1], row[2]}]
         
-BookStore_OBJ_lst = ["hours", "return policy", "customer service"]
-BookStore_OBJ_dic = {"hours": "Bookstore hours change depending on the time, semester, etc. but are generally Monday-Thursday 8am-7pm; Fridays 8am-5pm and Saturdays 8am-3pm. To find current hours, go to http://www.bkstr.com/texasatdallasstore/store-info-contact-us.",
-                    "customer service": "Contact University of Texas at Dallas Bookstore Manager Brian Weiskopf at (972) 883-2665 (phone), (972) 883-2543 (fax), or via email at utd@bkstr.com. You may also contact Carrie Chutes, Assistant Director of Food & Retail Services at (972) 883-6251 (phone), (972) 883-7480 (fax), or via email at chutes@utdallas.edu.",
-                    "return policy": "For information on the bookstore return policy, see http://www.bkstr.com/webapp/wcs/stores/servlet/HelpPoliciesView?langId=-1&catalogId=10001&storeId=128404&demoKey=d#returnpolicy."}
-TechStore_lst = ["hours", "discount"]
-TechStore_dic = {"hours": "The Tech Store hours are Monday-Thursday 9am-7pm; Fridays 9am-5pm.",
-                "discount": "Academic discounts up to 85% are available on some items. Please visit the store or website (http://www.utdtechstore.com/) for more details."}
 #------------------------------Part2--------------------------------
 # Here we define our Lambda function and configure what it does when 
 # an event with a Launch, Intent and Session End Requests are sent. # The Lambda function responses to an event carrying a particular 
@@ -49,9 +42,9 @@ def on_start():
 
 def on_launch(event):
     onlunch_MSG = "Hi, this is temoc here, how can I help?"
-    reprompt_MSG = "Do you want to hear more about the bookstore?"
+    reprompt_MSG = "Do you want to hear more?"
     card_TEXT = "Pick a topic."
-    card_TITLE = "Choose a chess player."
+    card_TITLE = "Choose a topic."
     return output_json_builder_with_reprompt_and_card(onlunch_MSG, card_TEXT, card_TITLE, reprompt_MSG, False)
 
 def on_end():
@@ -112,14 +105,14 @@ def stop_the_skill(event):
     
 def assistance(event):
     assistance_MSG = "You can choose among these terms: " + ', '.join(map(str, BookStore_OBJ_lst)) + ". Be sure to use the exact phrases."
-    reprompt_MSG = "Do you want to hear more about the bookstore?"
+    reprompt_MSG = "Do you want to hear more?"
     card_TEXT = "You've asked for help."
     card_TITLE = "Help"
     return output_json_builder_with_reprompt_and_card(assistance_MSG, card_TEXT, card_TITLE, reprompt_MSG, False)
 
 def fallback_call(event):
     fallback_MSG = "I can't help you with that, try rephrasing the question or ask for help by saying HELP."
-    reprompt_MSG = "Do you want to hear more about the bookstore?"
+    reprompt_MSG = "Do you want to hear more?"
     card_TEXT = "You've asked a wrong question."
     card_TITLE = "Wrong question."
     return output_json_builder_with_reprompt_and_card(fallback_MSG, card_TEXT, card_TITLE, reprompt_MSG, False)
